@@ -1,28 +1,48 @@
+
+.linkicon
+{
+    display: block;
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+}
+
+
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 /*nuevo comentario*/
 *{
 padding: 0;
 margin: 0;
-box-sizing: border-box;
-font-family: 'Poppins', 'sans-serif';
+box-sizing: border-box;/*hace que los valores del PADDING y el BORDER pasen a formar parte del cálculo del ancho de la caja y no lo suman posteriormente.*/
+font-family: 'Poppins', 'sans-serif';/*sin serifa*/
 }
 
 :root
 {
-    --clr: #222327;
+    --clr: #222327;/**/
 }
+
+/*configuraciones generales*/
 body
 {
+    /*
     display: flex;
     justify-content: center;
     align-items: center;
+    */
     min-height: 100vh;
     background: var(--clr);
 }
 
 .navigation
 {
+    /*posicionamos el div*/
+    margin-left: 30%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    
     position: relative;
     width: 400px;
     height: 70px;
@@ -52,41 +72,49 @@ position: relative;
 display: flex;
 justify-content: center;
 align-items: center;
-flex-direction: column;
-width: 100%;
 text-align: center;
-font-weight: 500;
+
+flex-direction: column;/*asignamos la orietacion columna*/
+width: 100%;
+font-weight: 500;/*peso o grueso de la letra*/
 }
+/*ICON*/
 .navigation ul li .icon
 {
-    position: relative;
-    display: block;
-    line-height: 75px;
-    font-size: 1.5em;
+    position: relative;/*no solapa, la posicion es relativa*/
+    display: block;/*para que ocupe todo*/
+    line-height: 75px;/*el alto de la lineas*/
+    font-size: 1.5em;/*em= tamaña en puntos de la tipografia*/
     text-align: center;
     transition: 0.5s;
-    color: var(--clr);
+    color: var(--clr);/*el color del fondo*/
 }
 .navigation ul li.active a .icon
 {
 transform: translateY(-32px);
 }
-.navigation ul li a .text
-{
-    position: absolute;
-    color: var(--clr);
-    font-weight: 400;
-    font-size: 0.75em;
-    letter-spacing: 0.05em;
-    transition: 0.5s;
-    opacity: 0;
-    transform: translateY(20px);
-}
-.navigation ul li.active a .text
-{
-    opacity: 1;
-    transform: translateY(10px);
-}
+    /*TEXT*/
+        .navigation ul li a .text   /*<==ACA*/
+        {
+            position: absolute;
+            color: var(--clr);
+            color: red;
+            font-weight: 400;
+            font-size: 0.75em;
+            letter-spacing: 0.05em;
+            transition: 0.5s;
+            opacity: 0;
+            transform: translateY(10px);
+        }
+        .navigation ul li.active a .text
+        {
+            opacity: 1; /*la opacidad*/
+            transform: translateY(10px);
+        }
+
+/*PARTE 2*/
+
+
 .indicator
 {
     position: absolute;
