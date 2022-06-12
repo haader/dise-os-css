@@ -41,8 +41,7 @@ body
     
     /*posicionamos el div*/
     margin-left: 30%;
-    margin-top: 5%;
-    margin-bottom: 5%;
+
     
     position: relative;
     width: 400px;
@@ -53,7 +52,6 @@ body
     align-items: center;
     border-radius: 10px;
 
-    display: none;/*LUEGO CAMBIAR*/
 
 }
 .navigation ul

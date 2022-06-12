@@ -63,12 +63,13 @@ li
 a
 .texto3
 {
-    color: var(--clr);
+    color: red;
     position: absolute;
     font-family: monospace;
     top: 40px;
     opacity: 0;
-    
+    transition: 0.5s;
+
 }
 /*ICONO*/
 .navegador3
@@ -94,6 +95,7 @@ a
             .icon3/*ICONOS*/  
             {
                 transform: translateY(-25px);
+                color: red;
             }
             .navegador3
             ul
@@ -118,6 +120,7 @@ a
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
     border: 3px solid var(--clr);
+    transition: 0.5s;
     
 }
 
@@ -154,14 +157,16 @@ box-shadow: 0px -7px 0 0 var(--clr);
 
 .navegador3 ul li:nth-child(1).activo ~ .indicador3
 {
-    background: red;
+    
     transform: translateX(calc(43px*0));
 }
 .navegador3 ul li:nth-child(2).activo ~ .indicador3
 {
-    transform: translateX(calc(55px*1));
+    
+    transform: translateX(calc(56px*1));
 }
 .navegador3 ul li:nth-child(3).activo ~ .indicador3
 {
-    transform: translateX(calc(55px*2));
+    
+    transform: translateX(calc(56px*2));
 }
