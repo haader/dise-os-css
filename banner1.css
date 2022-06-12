@@ -38,6 +38,7 @@ body
 
 .navigation
 {
+    
     /*posicionamos el div*/
     margin-left: 30%;
     margin-top: 5%;
@@ -51,6 +52,8 @@ body
     justify-content: center;
     align-items: center;
     border-radius: 10px;
+
+    display: none;/*LUEGO CAMBIAR*/
 
 }
 .navigation ul
@@ -89,28 +92,28 @@ font-weight: 500;/*peso o grueso de la letra*/
     transition: 0.5s;
     color: var(--clr);/*el color del fondo*/
 }
-.navigation ul li.active a .icon
-{
-transform: translateY(-32px);
-}
+                                .navigation ul li.active a .icon
+                                {
+                                transform: translateY(-32px);
+                                }
     /*TEXT*/
-        .navigation ul li a .text   /*<==ACA*/
-        {
-            position: absolute;
-            color: var(--clr);
-            color: red;
-            font-weight: 400;
-            font-size: 0.75em;
-            letter-spacing: 0.05em;
-            transition: 0.5s;
-            opacity: 0;
-            transform: translateY(10px);
-        }
-        .navigation ul li.active a .text
-        {
-            opacity: 1; /*la opacidad*/
-            transform: translateY(10px);
-        }
+.navigation ul li a .text   /*<==ACA*/
+{
+    position: absolute;
+    color: var(--clr);
+    color: red;
+    font-weight: 400;
+    font-size: 0.75em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateY(10px);
+}
+                            .navigation ul li.active a .text
+                            {
+                                opacity: 1; /*la opacidad*/
+                                transform: translateY(10px);
+                            }
 
 /*PARTE 2*/
 
