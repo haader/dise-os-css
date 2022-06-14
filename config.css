@@ -1,0 +1,173 @@
+.panelConfiguracionesClass/*div que esta en el index*/
+{
+
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    flex-direction: row;
+    z-index: 5;
+}
+
+
+.panelConfiguracionesClass h3
+{   
+    
+    color: blue;
+    text-align: center;
+}
+
+
+.btnConf .iconConf
+{
+    display: flex;
+    position: absolute;
+    background-color: orange;
+    border: 1px solid black;
+    border-right: none;
+    top: 0px;
+    left: -39px;
+    height: 3rem;
+    width: 40px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    z-index: 5;
+
+}
+
+.btnConf:hover .iconConf
+{
+    color: white;
+}
+
+.panelConfContenido
+{   
+    display: flex;
+    flex-direction: column;
+    background: orange;
+    position :relative;/*tiene que ser relativo para que la transición haga efecto*/
+    left:0px;
+    list-style: none;
+    border: 1px solid black;
+    width:0px;
+    transition: 1s;
+    justify-content: center;
+    
+}
+
+
+
+.panelConfContenido ul, .panelConfContenido h3{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    left: 50px;                
+   }
+                    .panelConfContenido.activado
+                    {   
+                        display:flex;
+                        position :relative;
+                        flex-direction: column;
+                        background: orange;
+                        width: 150px;
+                        transition: 1s;
+                        border: 1px solid black;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    .panelConfContenido.activado ul li{
+                        list-style: none;    
+                    }
+
+                    .panelConfContenido.activado ul, .panelConfContenido.activado h3{
+
+                        display: flex;
+                        position: relative;
+                        flex-direction: column;
+                        left: 0;
+                    }
+
+                    .panelConfContenido.activado .iconConf
+                    {
+                        color: white;
+                    }
+
+
+/*iconos de apagado de las columnas*/
+.panelConfContenido .itemeye
+{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.panelConfContenido .itemeye .btn
+{
+    margin-left: 1rem;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid black;
+    width: 50px;
+    height: 1.5rem;
+}
+.panelConfContenido .itemeye .eyeon
+{   
+    display: flex;
+    color: white;
+    position: relative;
+    background: black;
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1rem;
+
+    transition: 1s;
+    
+}                             
+
+                                .panelConfContenido .itemeye.activoeye .eyeon
+                                {   
+                                    display:flex;
+                                    position :absolute;
+                                    
+                                    transform: translateX(23px);
+                                    transition: 0.5s;
+                                }
+                                .panelConfContenido .itemeye.activoeye .eyeoff
+                                {   
+                                    display:flex;
+                                    position :absolute;
+                                    
+                                    transform: translateX(23px);
+                                    transition: 0.5s;
+                                    color: red;
+                                }  
+
+.panelConfContenido .itemeye .eyeoff
+{   
+    display: none;
+    color: white;
+    position: relative;
+    background: black;
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1rem;
+
+    transition: 1s;
+    
+}
+
+
+

@@ -11,29 +11,25 @@
     <link rel="stylesheet" href="general.css">
     <link rel="stylesheet" href="banner3.css">
     <link rel="stylesheet" href="banner4.css">
+    <link rel="stylesheet" href="banner5.css">
+    <link rel="stylesheet" href="config.css">
 </head>
 <body>
-
-
-
-
-   <!--pagina de iconos-->
+    <div class="header">
+        <h3 class="title">Barras de navegación bonitas</h3>
         
-            <a class="linkicon" href="https://ionic.io/ionicons" target="_blank">ionic.io</a>
-            
+    </div>
     
 
-    <h3 class="title">Barras de navegación bonitas</h3>
-
     <div class="contenedorAll">
-
-        <div class="columna1">
+        
+        <div class="columna" id="columna1">
 
         
             <br>
             <br>
             <!--PRIMER BANNER-->
-            <h4>Primer Banner:</h4>
+            <h3 class="tittle1">Primer Banner:</h3>
             <br>
             
             <div class="navigation">
@@ -103,7 +99,7 @@
             </div>
             <!--SEGUNDO BANNER-->
             <br>
-            <h4>Segundo Banner:</h4>
+            <h3 class="tittle2">Segundo Banner:</h3>
             <br>
         
         <div class="navegador2">
@@ -136,7 +132,7 @@
             </div>
             <!--TERCER BANNER-->
             <br>
-            <h4>Tercero Banner:</h4>
+            <h3 class="tittle3">Tercero Banner:</h3>
             <br>
         
             <div class="navegador3">
@@ -171,7 +167,7 @@
             </div>
             <!--CUARTO BANNER-->
         
-            <h4 class="tittleH4">Cuarto Banner</h4>
+            <h3 class="tittle4">Cuarto Banner</h3>
         
             <div class="navegador4">
         
@@ -225,57 +221,67 @@
         
             </div>
            
-            <div class="columna2">
+            <div class="columna" id="columna2">
+
+                <!--BANNER 5-->
+                <h3 class="tittle5">Quinto banner (DEPORTES)</h3>
                 <div class="navegador5">
                     <ul>
-                        <li class="list5">
-                            <a href="">
+                        <li class="list5 activo5">
+                            <a href="#">
                                 <span class="icon5"><ion-icon name="home-outline"></ion-icon></span>
                                 <span class="texto5">inicio</span>
                             </a>
                         </li>
-                    </ul>
-                    <ul>
+                   
                         <li class="list5">
-                            <a href="">
+                            <a href="#">
                                 <span class="icon5"><ion-icon name="person-outline"></ion-icon></span>
                                 <span class="texto5">usuario</span>
                             </a>
                         </li>
-                    </ul>
-                    <ul>
+                  
                         <li class="list5">
-                            <a href="">
+                            <a href="#">
                                 <span class="icon5"><ion-icon name="barbell-outline"></ion-icon></span>
                                 <span class="texto5">pesas</span>
                             </a>
                         </li>
-                    </ul>
-                    <ul>
+                 
                         <li class="list5">
-                            <a href="">
+                            <a href="#">
                                 <span class="icon5"><ion-icon name="bicycle-outline"></ion-icon></span>
                                 <span class="texto5">ciclismo</span>
                             </a>
                         </li>
-                    </ul>
-                                        <ul>
+          
                         <li class="list5">
-                            <a href="">
+                            <a href="#">
                                 <span class="icon5"><ion-icon name="fish-outline"></ion-icon></span>
                                 <span class="texto5">natación</span>
                             </a>
                         </li>
+
+                        <div class="selector5">
+
+                        </div>
+                        
                     </ul>
                 </div>
             </div>
             
-            <div class="columna3">
+            <div class="columna" id="columna3">
                 
             </div>
-        
+
     </div>
-   
+
+    <!--DIV CONFIGURACIONES-->
+    <div class="panelConfiguracionesClass" id="panelConfiguracionesid"></div>
+    
+   <!--PANEL CONFIGURACIONES-->
+ 
+
     <!--SCRIPT-->
     <script>
         const list=document.querySelectorAll('.list');
@@ -318,10 +324,34 @@
         }
         list4.forEach((item4)=>
         item4.addEventListener('click',activolink4));
+
+         /*4*/
+
+         const list5=document.querySelectorAll('.list5');
+        function activolink5(){
+            list5.forEach((item5)=>
+            item5.classList.remove('activo5'));
+            this.classList.add('activo5')
+        }
+        list5.forEach((item5)=>
+        item5.addEventListener('click',activolink5));
     </script>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script type="text/javascript" src="./jquery.js"></script>
+   
+
+<script>/*CARGAMOS EL div config.html*/
+    $(document).ready(function () {
+    $('.panelConfiguracionesClass').load('./config.html');
+    });
+
+</script>
+
+<script type="text/javascript" src="./logica/conf.js"></script>
+
 
 </body>
 </html>

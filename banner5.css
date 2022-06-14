@@ -1,0 +1,133 @@
+
+
+.navegador5
+{
+    background: white;
+    width: 416px;
+    height: 4rem;
+    border-radius: 10px;
+}
+.navegador5 ul
+{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.navegador5 ul li
+{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    height: 100%;
+    width: 5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.navegador5 ul li a
+{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+    
+}
+
+.navegador5 ul li a .icon5
+{
+    font-size: 1.5rem;
+    z-index: 1;
+    color: black;
+}                         
+.navegador5 ul li:hover a .icon5
+{
+    font-size: 2rem;
+    transition: 0.5s;
+}  
+                    .navegador5 ul li.activo5 a .icon5
+                    {
+                        font-size: 2rem;
+                        transform: translateY(35px);
+                        transition: 0.5s;
+                        color: darkcyan;
+                    }
+
+
+.navegador5 ul li a .texto5
+{
+    position: absolute;
+    font-family: monospace;
+    transform: translateY(-40px);
+    opacity: 0;
+    z-index: 1;
+    color: black;
+}
+                    .navegador5 ul li.activo5 a .texto5
+                    {
+                        transform: translateY(0px);
+                        opacity: 1;
+                        transition: 0.5s;
+                        color: darkcyan;
+                    }
+
+.navegador5 ul .selector5
+{
+    display: flex;
+    position: absolute;
+    height: 5rem;
+    width: 6rem;
+    background: white;
+    left: 0rem;
+    bottom: -2rem;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+
+.navegador5 ul .selector5::before
+{
+    content: "";
+    position: absolute;
+    top: -33px;    
+    left: 0;
+    width: 6rem;
+    height: 1rem;
+    background: transparent;
+    border-radius: 50%;
+    border-width: 0px 0 15px ;
+    border-style: solid;
+    border-color: #222327;
+    
+  
+}
+
+.navegador5 ul li:nth-child(1).activo5 ~ .selector5
+{
+    transform: translateX(calc(70px*0));
+}
+
+.navegador5 ul li:nth-child(2).activo5 ~ .selector5
+{
+    transform: translateX(calc(80px*1));
+}
+
+.navegador5 ul li:nth-child(3).activo5 ~ .selector5
+{
+    transform: translateX(calc(80px*2));
+}
+
+.navegador5 ul li:nth-child(4).activo5 ~ .selector5
+{
+    transform: translateX(calc(80px*3));
+}
+
+.navegador5 ul li:nth-child(5).activo5 ~.selector5
+{
+    transform: translateX(calc(80px*4));
+}

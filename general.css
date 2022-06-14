@@ -1,3 +1,7 @@
+.header{
+    width: 100%;
+}
+
 .linkicon{
     height: 2rem;
     background: wheat;
@@ -16,20 +20,25 @@ font-family: 'Courier New', Courier, monospace;
 .contenedorAll
 {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 
 }
-.columna1, .columna2, .columna3
+.columna
 {
     display: flex;
     flex-direction: column;
     align-items: center;
     border: 2px solid black;
     flex-grow: 1;
-    
-    
+    justify-content: flex-start;
 }
 
-.navigation, .navegador1, .navegador2, .navegador3
+.tittle1, .tittle2, .tittle3, .tittle4, .tittle5{
+    color: orange;
+}
+
+.navigation, .navegador1, .navegador2, .navegador3, .navegador4, .navegador5
 {
     margin-top: 1rem;
 }
