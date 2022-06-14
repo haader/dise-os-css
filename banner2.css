@@ -1,9 +1,7 @@
 
 
-.navegador
+.navegador2
 {
-    margin-left: 30%;
-
     display: flex;
     position: relative;
     justify-content: center;
@@ -14,14 +12,14 @@
     border-radius: 10px;
 }
 
-.navegador
+.navegador2
 ul
 {
     display: flex;
     width:150px;
 }
 
-.navegador
+.navegador2
 ul
 li
 {
@@ -35,7 +33,7 @@ li
 }
 
 
-.navegador
+.navegador2
 ul
 li
 a
@@ -53,7 +51,7 @@ a
 }
 
 /*ICON*/
-.navegador
+.navegador2
 ul
 li
 .icon2
@@ -67,7 +65,7 @@ li
     color: black;
 }
 
-.navegador
+.navegador2
 ul
 li.activo
 a
@@ -78,7 +76,7 @@ a
 
         /*TEXT*/
 
-        .navegador
+        .navegador2
         ul
         li
         a
@@ -95,7 +93,7 @@ a
         }
 
 
-        .navegador
+        .navegador2
         ul
         li.activo
         a
@@ -153,15 +151,15 @@ transition: 0.5s;
 }
 
 
-.navegador ul li:nth-child(1).activo ~ .indicador
+.navegador2 ul li:nth-child(1).activo ~ .indicador
 {
     transform: translateX(calc(50px*0));
 }
-.navegador ul li:nth-child(2).activo ~ .indicador
+.navegador2 ul li:nth-child(2).activo ~ .indicador
 {
     transform: translateX(calc(50px*1));
 }
-.navegador ul li:nth-child(3).activo ~ .indicador
+.navegador2 ul li:nth-child(3).activo ~ .indicador
 {
     transform: translateX(calc(50px*2));
 }

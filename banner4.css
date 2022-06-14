@@ -1,0 +1,240 @@
+.tittleH4
+{
+    color: orange
+}
+.navegador4
+{
+    display: flex;
+    justify-content: center;
+    background: white;
+    border-radius: 10px;
+    position: relative;
+    
+    height: 70px;
+    width: 300px;
+    margin-top: 3rem;
+}
+.navegador4
+ul
+{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+
+}
+
+.navegador4
+ul
+li
+{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 50px;
+    height: 50px;
+}
+
+
+.navegador4
+ul
+li
+a
+{   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+    height: 100%;
+    
+}
+
+
+
+.navegador4
+ul
+li
+a
+.icon4
+{
+    position: absolute;
+    font-weight: 900; 
+    font-size: 1.5rem;
+    z-index: 2;
+    
+}
+                    .navegador4
+                    ul
+                    li.activo4
+                    a
+                    .icon4
+                    {
+                        transform: translateY(-25px);   
+                        color: red;
+                        transition: 0.5s;
+                    }
+
+
+
+.navegador4
+ul
+li
+a
+.texto4, .texto4b
+{
+    font-family: monospace;
+    font-size: 0.5rem;
+    transform: translateY(40px);
+    opacity: 0;
+    z-index: 1;
+}
+                                    
+                                    .navegador4
+                                    ul
+                                    li.activo4
+                                    a
+                                    .texto4, .navegador4
+                                    ul
+                                    li.activo4
+                                    a .texto4b
+                                    {
+                                        font-family: monospace;
+                                        transform: translateY(20px);
+                                        
+                                        opacity: 1;
+                                        transition: 0.5s;
+                                    }
+
+                                   
+
+
+.selector4
+{
+    position: absolute;
+    height: 6rem;
+    width: 4rem;
+    background:white;
+    border-top-left-radius: 10px;
+    /*border-radius: 50%;*/
+    left: 10px;
+    top:-2rem;
+    border: 3px solid var(--clr);
+    transition: 0.5s ;
+    border: 1px solid black;
+}
+
+.selector4::after
+{
+    content: '';
+    background: sandybrown;
+    position: absolute;
+    bottom: 0rem;
+    height: 5px;
+    width:100%;
+    border-top-left-radius: 50%;
+    border-top: 1px solid black;
+}
+.selector4::before
+{
+    content:'';
+    background: sandybrown;
+    position: absolute;
+    right: 0rem;
+    height: 95%;
+    width:2px;
+    border-top-left-radius: 10%;
+    border-left: 1px solid black;
+    z-index: 1;
+}
+
+.diver
+{
+    background:slateblue;
+    border: 2px solid red;
+    display: flex;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    left: 10px;
+    top: 80%;
+    z-index: 1;
+}
+
+
+.navegador4 ul li:nth-child(1).activo4 ~ .selector4
+{
+    transform: translateX(calc(70px*0));
+}
+
+.navegador4 ul li:nth-child(2).activo4 ~ .selector4
+{
+    transform: translateX(calc(73px*1));
+}
+.navegador4 ul li:nth-child(3).activo4 ~ .selector4
+{
+    transform: translateX(calc(73px*2));
+}
+.navegador4 ul li:nth-child(4).activo4 ~ .selector4
+{
+    transform: translateX(calc(73px*3));
+}
+
+
+/**/
+
+.navegador4 ul li:nth-child(1).activo4 .texto4 
+{
+    font-size: 1rem;    
+}
+
+.navegador4 ul li:nth-child(2).activo4 .texto4
+{
+    font-size: 1rem;
+}
+.navegador4 ul li:nth-child(3).activo4 .texto4
+{
+    font-size: 1rem;
+}
+.navegador4 ul li:nth-child(4).activo4 .texto4
+{
+    font-size: 1rem;
+    display: flex;
+    position: absolute;
+    bottom: 1rem;
+    left: -0.5rem;
+    transform: rotate(-0.15turn);
+    transition: 0.5s;
+    z-index: 1;
+}
+.navegador4 ul li:nth-child(4).activo4 .texto4b
+{
+    font-size: 1rem;
+    display: flex;
+    position: absolute;
+    bottom: 1rem;
+    left: 0rem;
+    transform: rotate(-0.15turn);
+    transition: 0.5s;
+    z-index: 1;
+}
+
+/*iconos cambio de color*/
+.navegador4 ul li:nth-child(1).activo4 .icon4
+{
+    color: black;
+}
+
+.navegador4 ul li:nth-child(2).activo4 .icon4
+{
+    color: orange;
+}
+.navegador4 ul li:nth-child(3).activo4 .icon4
+{
+    color: darkblue;
+}
+.navegador4 ul li:nth-child(4).activo4 .icon4
+{
+    color: yellow;
+}
